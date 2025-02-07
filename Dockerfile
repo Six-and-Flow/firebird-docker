@@ -1,5 +1,4 @@
-FROM debian:bullseye-slim
-LABEL maintainer="jacob.alberty@foundigital.com"
+FROM debian:bullseye-slim AS build
 
 ENV PREFIX=/usr/local/firebird
 ENV VOLUME=/firebird

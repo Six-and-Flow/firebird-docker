@@ -1,0 +1,12 @@
+services:
+  firebird:
+    build:
+      context: .
+    env_file:
+      - ./.env
+    image: local_firebird
+    volumes:
+      - ./restore:/firebird/restore
+      - ./data:/firebird/data
+    ports:
+      - "3050:3050"
